@@ -1,6 +1,6 @@
 pragma solidity ^0.5.0;
 
-contract ProofOfExistenceIPFS {
+contract EthIpfsPoe {
 
   // Maps - proofs need wiring up
   mapping (bytes32 => bool) private proofs;

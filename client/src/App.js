@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import IPFSpoeContract from "./contracts/IPFSpoe.json";
+import EthIpfsPoeContract from "./contracts/EthIpfsPoe.json";
 import getWeb3 from "./utils/getWeb3";
 import ipfs from "./ipfs";
 import "./App.css";
@@ -34,9 +34,9 @@ class App extends Component {
 
       // Get the contract instance.
       const networkId = await web3.eth.net.getId();
-      const deployedNetwork = IPFSpoeContract.networks[networkId];
+      const deployedNetwork = EthIpfsPoeContract.networks[networkId];
       const instance = new web3.eth.Contract(
-        IPFSpoeContract.abi,
+        EthIpfsPoeContract.abi,
         deployedNetwork && deployedNetwork.address,
       );
 

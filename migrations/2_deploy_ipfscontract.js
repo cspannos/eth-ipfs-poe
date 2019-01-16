@@ -1,4 +1,4 @@
-var IPFSpoe = artifacts.require("./IPFSpoe.sol");
+var EthIpfsPoe = artifacts.require("./EthIpfsPoe.sol");
 module.exports = function(deployer) {
-  deployer.deploy(IPFSpoe);
+  deployer.deploy(EthIpfsPoe);
 };
