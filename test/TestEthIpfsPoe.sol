@@ -1,5 +1,5 @@
 pragma solidity >=0.5.0 <0.6.0;
-import "remix_tests.sol"; // this import is automatically injected by Remix.
+import "remix_tests.sol"; // imported automatically injected by Remix.
 
 // file name has to end with '_test.sol'
 contract test_1 {
